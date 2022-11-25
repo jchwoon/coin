@@ -11,7 +11,7 @@ const paths = path.join(__dirname);
 
 const port = 4000;
 
-app.use("/", express.static(paths));
+app.use(express.static(paths));
 const handleListening = () => {
   console.log(`http://localhost:${port}`);
 };

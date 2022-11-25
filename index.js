@@ -1,6 +1,6 @@
-import Coin from "./Component/Coin.js";
 import Coins from "./Component/Coins.js";
 import Header from "./Component/Header.js";
+import Coin from ".//Component/Coin.js";
 import NotFound from "./Component/NotFound.js";
 
 const root = document.getElementById("root");
@@ -36,4 +36,7 @@ header.addEventListener("click", (e) => {
 });
 
 window.addEventListener("popstate", () => render(location.pathname));
-window.addEventListener("DOMContentLoaded", () => render(location.pathname));
+window.addEventListener("DOMContentLoaded", (e) => {
+  console.log(e);
+  render(location.pathname);
+});
